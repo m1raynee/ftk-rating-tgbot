@@ -13,7 +13,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Table(name = "rating_entries")
 public class RatingEntry {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -44,5 +43,4 @@ public class RatingEntry {
         this.ratingType = ratingType;
         this.awardedByStudent = awardedByStudent;
     }
-
 }
