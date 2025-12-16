@@ -18,6 +18,8 @@ public class User {
     @NaturalId
     Long telegramId;
 
+    private boolean isTeacher = false;
+
     @OneToOne(fetch = FetchType.LAZY)
     Student student;
 

@@ -6,7 +6,7 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
 import com.m1raynee.db.entity.*;
 
-public class HibernateConfiguration {
+public final class HibernateConfiguration {
     private static final SessionFactory sessionFactory = new MetadataSources(
             new StandardServiceRegistryBuilder().build())
             .addAnnotatedClass(Student.class)
